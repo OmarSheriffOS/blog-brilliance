@@ -21,7 +21,6 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({
   lastUpdated,
   bannerImage,
   bannerAlt,
-  tldr,
   tocItems,
   children,
 }) => {
