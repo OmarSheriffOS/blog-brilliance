@@ -71,6 +71,41 @@ All colors MUST be HSL.
   }
 }
 
+/* Blog prose styles — reusable content formatting */
+.prose-blog {
+  @apply text-foreground/85 leading-relaxed;
+}
+.prose-blog h2 {
+  @apply font-display text-2xl font-bold text-foreground mt-12 mb-4 scroll-mt-24;
+}
+.prose-blog h3 {
+  @apply font-display text-xl font-semibold text-foreground mt-8 mb-3 scroll-mt-24;
+}
+.prose-blog p {
+  @apply mb-5 text-base leading-7;
+}
+.prose-blog ul {
+  @apply mb-5 ml-5 list-disc space-y-2;
+}
+.prose-blog ol {
+  @apply mb-5 ml-5 list-decimal space-y-2;
+}
+.prose-blog li {
+  @apply text-base leading-7;
+}
+.prose-blog a {
+  @apply text-accent underline underline-offset-2 hover:text-accent/80 transition-colors;
+}
+.prose-blog strong {
+  @apply text-foreground font-semibold;
+}
+.prose-blog img {
+  @apply rounded-xl my-6 w-full;
+}
+.prose-blog hr {
+  @apply my-10 border-border;
+}
+
 @layer base {
   * {
     @apply border-border;
