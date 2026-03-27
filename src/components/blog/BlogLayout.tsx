@@ -4,17 +4,13 @@ import BlogSidebar, { type TocItem } from "./BlogSidebar";
 import type { AuthorData } from "./AuthorPopover";
 
 interface BlogLayoutProps {
-  /** Banner props */
   category: string;
   title: string;
   author: AuthorData;
   lastUpdated: string;
   bannerImage: string;
   bannerAlt?: string;
-  /** Sidebar props */
-  tldr: React.ReactNode;
   tocItems: TocItem[];
-  /** Blog body content */
   children: React.ReactNode;
 }
 
