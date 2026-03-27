@@ -34,10 +34,15 @@ const BlogBanner: React.FC<BlogBannerProps> = ({
             <h1 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-bold leading-tight text-foreground">
               {title}
             </h1>
-            <div className="flex items-center gap-3 text-sm">
-              <AuthorPopover author={author} />
-              <span className="text-muted-foreground">·</span>
-              <time className="text-accent font-medium">{lastUpdated}</time>
+            <div className="flex items-center gap-6 text-sm">
+              <div>
+                <span className="block text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">Author</span>
+                <AuthorPopover author={author} />
+              </div>
+              <div>
+                <span className="block text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">Last Updated</span>
+                <time className="text-accent font-medium">{lastUpdated}</time>
+              </div>
             </div>
           </div>
 
