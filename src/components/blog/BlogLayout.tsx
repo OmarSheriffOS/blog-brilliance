@@ -38,7 +38,7 @@ const BlogLayout: React.FC<BlogLayoutProps> = ({
       <div className="container mx-auto px-6 py-12 lg:py-16">
         <div className="flex gap-12 lg:gap-16 items-start">
           {/* Sidebar - left on desktop */}
-          <BlogSidebar tldr={tldr} tocItems={tocItems} />
+          <BlogSidebar tocItems={tocItems} />
 
           {/* Main content */}
           <article className="flex-1 min-w-0 max-w-3xl">
