@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Space Grotesk', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,16 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        blog: {
+          banner: "hsl(var(--blog-banner-bg))",
+          highlight: "hsl(var(--blog-highlight))",
+          "highlight-bg": "hsl(var(--blog-highlight-bg) / 0.1)",
+          link: "hsl(var(--blog-link))",
+          sidebar: "hsl(var(--blog-sidebar-bg))",
+          "toc-active": "hsl(var(--blog-toc-active))",
+          "table-header": "hsl(var(--blog-table-header))",
+          "table-stripe": "hsl(var(--blog-table-stripe))",
         },
       },
       borderRadius: {
