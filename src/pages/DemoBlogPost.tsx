@@ -45,7 +45,7 @@ const DemoBlogPost: React.FC = () => {
       lastUpdated="31 October, 2025"
       bannerImage={bannerImage}
       bannerAlt="SaaS SEO Agencies Blog Banner"
-      tldr={tldrContent}
+      
       tocItems={tocItems}
     >
       {/* Intro */}
