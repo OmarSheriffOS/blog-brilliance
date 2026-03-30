@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 242 45% 15%;
+
+    --card: 230 30% 97%;
+    --card-foreground: 242 45% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 242 45% 15%;
+
+    --primary: 350 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 196 91% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 25% 95%;
+    --muted-foreground: 242 20% 45%;
+
+    --accent: 196 91% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 350 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 20% 90%;
+    --input: 230 20% 90%;
+    --ring: 350 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 230 30% 97%;
+    --sidebar-foreground: 242 45% 15%;
+    --sidebar-primary: 350 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 25% 95%;
+    --sidebar-accent-foreground: 242 45% 15%;
+    --sidebar-border: 230 20% 90%;
+    --sidebar-ring: 350 100% 50%;
+
+    /* Blog-specific tokens */
+    --blog-banner-bg: 230 30% 97%;
+    --blog-highlight: 46 97% 49%;
+    --blog-highlight-bg: 46 97% 49%;
+    --blog-link: 196 91% 42%;
+    --blog-sidebar-bg: 230 30% 97%;
+    --blog-toc-active: 350 100% 50%;
+    --blog-table-header: 230 30% 96%;
+    --blog-table-stripe: 230 25% 98%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+/* Blog prose styles — reusable content formatting */
+.prose-blog {
+  @apply text-foreground/85 leading-relaxed;
+}
+.prose-blog h2 {
+  @apply font-display text-2xl font-bold text-foreground mt-12 mb-4 scroll-mt-24;
+}
+.prose-blog h3 {
+  @apply font-display text-xl font-semibold text-foreground mt-8 mb-3 scroll-mt-24;
+}
+.prose-blog p {
+  @apply mb-5 text-base leading-7;
+}
+.prose-blog ul {
+  @apply mb-5 ml-5 list-disc space-y-2;
+}
+.prose-blog ol {
+  @apply mb-5 ml-5 list-decimal space-y-2;
+}
+.prose-blog li {
+  @apply text-base leading-7;
+}
+.prose-blog a {
+  @apply text-accent underline underline-offset-2 hover:text-accent/80 transition-colors;
+}
+.prose-blog strong {
+  @apply text-foreground font-semibold;
+}
+.prose-blog img {
+  @apply rounded-xl my-6 w-full;
+}
+.prose-blog hr {
+  @apply my-10 border-border;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
